@@ -114,7 +114,7 @@ Target.create "CleanDocs" (fun _ ->
 Target.create "Build" (fun _ ->
     DotNet.restore id solution
     !! solution
-    |> MSBuild.runRelease (fun par -> { par with MaxCpuCount = Some (Some Environment.ProcessorCount) }) "" "Rebuild"
+    |> MSBuild.runRelease (fun par -> { par with MaxCpuCount = Some (Some Environment.ProcessorCount); ToolPath = @"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe" }) "" "Rebuild"
     |> ignore
 )
 
