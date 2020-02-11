@@ -9,6 +9,7 @@
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="PropertyAttribute.fs" />
     <Compile Include="CheckExtensions.fs" />
+    <Compile Include="BetterFsCheckRunner.fs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="paket.references" />

@@ -22,9 +22,3 @@ group Build
     nuget FSharp.Formatting prerelease
 	nuget FSharp.Formatting.CommandTool prerelease
     nuget xunit.runner.console
-
-group portable
-	source https://www.nuget.org/api/v2
-	framework: auto-detect
-	nuget FSharp.Core >= 4.0 lowest_matching: true, redirects: force
-	
